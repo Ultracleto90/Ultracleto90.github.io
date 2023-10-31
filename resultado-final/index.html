@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpiShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">CarpiShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">CarpiShop</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="novedades-button" class="boton-menu boton-categoria active">Novedades</button>
+                    </li>
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+                    </li>
+                    <li>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100090445220856&mibextid=ZbWKwL" target="_blank" class="boton-menu boton-redes">
+                            <i class="bi bi-facebook"></i> Síguenos en Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Femilianocletoflores%3Figshid%3DOGQ5ZDc2ODk2ZA%253D%253D%26fbclid%3DIwAR1ZS1hU9ujdDAmur6BajS9uXkUKe0xhItxIK22SUsoTIPYMKzZErLr7-E8&h=AT1cRPtxKZVtsxBO4Ii156ay6vTfelZNopZ2zeO_31penP88j9XJd99hcR6t8qZP_vSDaNL-YeDiVMLkxeRuHx0Gb091dpwsx9XtvrUzGuztzpq3HD_2s7bNh9dMHC9xShW5vw"
+                            target="_blank" class="boton-menu boton-redes">
+                            <i class="bi bi-instagram"></i> Síguenos en Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEmiliano_cleto_%3Ft%3DBcQUZwmHzrsOAzwYZrBzCw%26s%3D09%26fbclid%3DIwAR07sZ93VWutB0QqMvyC4i7VVGWaZd4UWN46XiVtny5ZQ_VSpJG-KlKSnUA&h=AT1cRPtxKZVtsxBO4Ii156ay6vTfelZNopZ2zeO_31penP88j9XJd99hcR6t8qZP_vSDaNL-YeDiVMLkxeRuHx0Gb091dpwsx9XtvrUzGuztzpq3HD_2s7bNh9dMHC9xShW5vw"
+                            target="_blank" class="boton-menu boton-redes">
+                            <i class="bi bi-twitter"></i> Síguenos en Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://acortar.link/FuTFQQ" target="_blank" class="boton-menu boton-redes">
+                            <i class="bi bi-geo-alt"></i> Encuéntranos en Google Maps
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+            <div id="novedades-content" class="contenido-novedades">
+                <h2 class="novedades-titulo">¿Quienes somos?</h2>
+                <p id="novedades-texto" class="novedades-Parrafo">CarpiShop es una destacada empresa con una amplia trayectoria de más de 10 años en la industria de la moda masculina. Nos especializamos en la venta de ropa de alta calidad y estilo para caballeros, ofreciendo a nuestros clientes una amplia
+                    selección de prendas y accesorios que reflejan la elegancia, la sofisticación y la comodidad que demandan. Historia: Fundada en 2010 por un grupo de apasionados de la moda masculina, CarpiShop ha experimentado un crecimiento constante
+                    y se ha convertido en un referente en el mundo de la moda para hombres. Durante más de una década, hemos perfeccionado nuestro enfoque en la confección de prendas que combinan las tendencias actuales con elementos clásicos atemporales.
+                    Nuestra amplia experiencia nos ha permitido comprender en profundidad las necesidades y preferencias de nuestros clientes, estableciendo relaciones sólidas con fabricantes de renombre y diseñadores talentosos. Productos y Servicios:
+                    CarpiShop ofrece una amplia gama de productos de ropa para caballeros, que incluye trajes a medida, camisas, pantalones, chaquetas, abrigos, corbatas, zapatos, accesorios y más. Nuestra selección abarca desde opciones casuales hasta
+                    atuendos de negocios y eventos formales, garantizando que nuestros clientes siempre encuentren la prenda perfecta para cualquier ocasión. Además de la venta de ropa de alta calidad, ofrecemos un servicio de asesoramiento personalizado
+                    en moda, donde nuestros expertos ayudan a los clientes a elegir el atuendo que mejor se adapte a su estilo y necesidades. Compromiso con la Calidad: La calidad es una de las principales prioridades de CarpiShop. Trabajamos con los
+                    mejores materiales y empleamos técnicas de confección de vanguardia para asegurar que cada prenda que ofrecemos sea de la más alta calidad. Nuestro compromiso con la satisfacción del cliente se refleja en la durabilidad y el estilo
+                    de nuestras prendas. Visión: Nuestra visión es continuar siendo líderes en la industria de la moda masculina, manteniendo nuestra tradición de excelencia en calidad y servicio. Buscamos inspirar a los hombres a expresar su individualidad
+                    a través de la moda, proporcionando opciones versátiles y elegantes que se adapten a su estilo de vida. Localización: CarpiShop tiene su sede en el corazón de la ciudad, con una tienda insignia que ofrece una experiencia de compra
+                    única, así como una presencia en línea para satisfacer las necesidades de nuestros clientes en todo el país.</p>
+                <p id="novedades-texto" class="novedades-texto">
+                    Equipo de desarrollo:
+                </p>
+                <p id="novedades-texto" class="novedades-texto">
+                    - Emiliano Cleto Flores
+                </p>
+                <p id="novedades-texto" class="novedades-texto">
+                    - Daniel Prado Noguez
+                </p>
+                <p id="novedades-texto" class="novedades-texto">
+                    - Cesar Adrian Quintero Palma
+                </p>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
